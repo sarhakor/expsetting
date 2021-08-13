@@ -19,11 +19,13 @@
 Please install the package on the docker container.
 ### Anaconda3
 ```bash
+cd ~/SETUP
 ./pakages/anaconda3.sh
 ```
 
 ### Pakages for video coding
 cmake and parallel
 ``` bash
+cd ~/SETUP
 ./pakages/videocoding.sh
 ```
