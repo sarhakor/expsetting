@@ -18,14 +18,15 @@
 ## Install additional pakages 
 Please install the package on the docker container.
 ### Pakages for deep learning
-Anaconda3
+- [Anaconda3](https://www.anaconda.com/products/individual)
 ```bash
 cd ~/SETUP
 ./pakages/anaconda3.sh
 ```
 
 ### Pakages for video coding
-cmake and parallel
+- [cmake](https://cmake.org/)
+- [parallel]
 ``` bash
 cd ~/SETUP
 ./pakages/videocoding.sh
