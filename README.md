@@ -4,7 +4,7 @@
 
 ### Build base dockerfile
 ```bash
-./build_docker.sh demo	# set your project name
+./build_docker.sh {docker image name}	# set your project name
 ```
 
 ### Run docker images
