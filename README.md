@@ -26,7 +26,7 @@ cd ~/SETUP
 
 ### Pakages for video coding
 - [cmake](https://cmake.org/)
-- [parallel]
+- parallel
 ``` bash
 cd ~/SETUP
 ./pakages/videocoding.sh
