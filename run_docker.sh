@@ -1,8 +1,9 @@
 #!/bin/bash
-PATH_DATASET=$1
-PATH_PROJECT=$2
-NAME_IMAEG=$3
-NAME_CONTAINER=$4
+PATH_EXPSETTING=$1
+PATH_DATASET=$2
+PATH_PROJECT=$3
+NAME_IMAEG=$4
+NAME_CONTAINER=$5
 
 sudo docker run \
     -it \
@@ -18,6 +19,7 @@ sudo docker run \
     -v /etc/group:/etc/group:ro \
     -v /run/user/1000:/run/user/1000 \
     -v /dev:/dev \
+    -v ${PATH_EXPSETTING}:/home/${USER}/SETUP
     -v ${PATH_DATASET}:/home/${USER}/DATASET \
     -v ${PATH_PROJECT}:/home/${USER}/PROJ \
     --name ${NAME_CONTAINER} ${NAME_IMAEG}
