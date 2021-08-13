@@ -14,7 +14,8 @@ sudo docker run \
     --gpus all \
     --privileged \
     --user $(id -u ${USER}):$(id -g ${USER}) \
-    -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY \
+    -v /tmp/.X11-unix:/tmp/.X11-unix \
+    -e DISPLAY=unix$DISPLAY \
     -v /etc/passwd:/etc/passwd:ro \
     -v /etc/group:/etc/group:ro \
     -v /run/user/1000:/run/user/1000 \
@@ -22,4 +23,4 @@ sudo docker run \
     -v ${PATH_EXPSETTING}:/home/${USER}/SETUP \
     -v ${PATH_DATASET}:/home/${USER}/DATASET \
     -v ${PATH_PROJECT}:/home/${USER}/PROJ \
-    --name ${NAME_IMAEG} ${NAME_CONTAINER}
+    --name ${NAME_CONTAINER} ${NAME_IMAEG}
