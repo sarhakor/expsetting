@@ -17,7 +17,8 @@
 
 ## Install additional pakages 
 Please install the package on the docker container.
-### Anaconda3
+### Pakages for deep learning
+Anaconda3
 ```bash
 cd ~/SETUP
 ./pakages/anaconda3.sh
