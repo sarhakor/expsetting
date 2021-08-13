@@ -20,4 +20,4 @@ sudo docker run \
     -v /dev:/dev \
     -v ${PATH_DATASET}:/home/${USER}/DATASET \
     -v ${PATH_PROJECT}:/home/${USER}/PROJ \
-    --name ${NAME_CONTAINER} ${NAME_IMAGE}
+    --name ${NAME_CONTAINER} ${NAME_IMAEG}
