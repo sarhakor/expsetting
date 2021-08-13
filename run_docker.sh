@@ -19,7 +19,7 @@ sudo docker run \
     -v /etc/group:/etc/group:ro \
     -v /run/user/1000:/run/user/1000 \
     -v /dev:/dev \
-    -v ${PATH_EXPSETTING}:/home/${USER}/SETUP
+    -v ${PATH_EXPSETTING}:/home/${USER}/SETUP \
     -v ${PATH_DATASET}:/home/${USER}/DATASET \
     -v ${PATH_PROJECT}:/home/${USER}/PROJ \
-    --name ${NAME_CONTAINER} ${NAME_IMAEG}
+    --name ${NAME_IMAEG} ${NAME_CONTAINER}
