@@ -11,8 +11,8 @@
 ### Run docker images
 ```bash
 # All use absolute paths
-# ./run_docker.sh {your dataset path} {your project path} {docker image name} {docker container name}
-./run_docker.sh /media/${USER}/expdata/dataset /home/${USER}/workspace/project demo demo_test
+# ./run_docker.sh {expsetting path} {your dataset path} {your project path} {docker image name} {docker container name}
+./run_docker.sh /home/${USER}/workspace/expsetting /media/${USER}/expdata/dataset /home/${USER}/workspace/project demo demo_test
 ```
 
 ## Install additional pakages 
