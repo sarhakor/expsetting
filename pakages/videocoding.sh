@@ -24,8 +24,10 @@ tar -xvzf ${cmakever}.tar.gz
 cd ${cmakever}
 ./bootstrap --prefix=/usr/local
 make && sudo make install
-cmake --version
 
 # install parappel
 sudo apt-get update -y && sudo apt-get install -y parallel
+
+# check success
+cmake --version
 parallel --version
